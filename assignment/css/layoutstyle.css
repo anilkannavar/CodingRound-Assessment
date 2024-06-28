@@ -266,11 +266,47 @@ footer .social-links a {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 .image-container:hover .price-tag {
-    display: block; /* Show on hover */
+    display: block; 
     font-size: 200%;
 }
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
